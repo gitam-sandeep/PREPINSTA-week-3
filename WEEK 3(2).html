@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instagram-like Image Gallery</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #c3e3f6;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-gap: 20px;
+    }
+    .image {
+      width: 100%;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(203, 46, 46, 0.1);
+    }
+    .image img {
+      width: 100%;
+      height: auto;
+    }
+    .upload-button {
+      display: block;
+      margin: 20px auto;
+      padding: 10px 20px;
+      background-color: #55a4ed;
+      color: #0f1010;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+<div class = header>
+    <h1><center>INSTAGRAM</center></h1>
+</div>
+  <div class="container">
+    <div class="image">
+      <img src="https://www.hindustantimes.com/ht-img/img/2024/03/16/550x309/Kalki_2898_AD_1710600133335_1710600146711.jpg" alt="Image 1">
+    </div>
+    <div class="image">
+      <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_2/IMAGE_1676828160.jpg" alt="Image 2">
+    </div>
+    <div class="image">
+      <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202312/prabhas-salaar-230500318-16x9_0.jpg?VersionId=zcMycYrl0NGyt7Q8D9ryVckt8.3qkoia&size=690:388" alt="Image 3">
+    </div>
+  </div>
+  <button class="upload-button">Upload Image</button>
+</body>
+</html>
